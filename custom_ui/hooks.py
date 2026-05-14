@@ -21,6 +21,43 @@ app_license = "mit"
 # 	}
 # ]
 
+# ── CSS injected into the Desk (backend) ──────────────────────
+# app_include_css = [
+#     "/assets/custom_ui/css/desk.css",
+# ]
+ 
+# ── JS injected into the Desk (backend) ──────────────────────
+# app_include_js = [
+#     "/assets/custom_ui/js/theme.js",
+# ]
+ 
+# ── CSS/JS for Website / Portal (frontend) ───────────────────
+# web_include_css = [
+#     "/assets/custom_ui/css/desk.css",
+# ]
+ 
+# web_include_js = [
+#     "/assets/custom_ui/js/theme.js",
+# ]
+
+app_include_css = [
+    "/assets/custom_ui/css/theme.css"
+]
+
+app_include_js = [
+    "/assets/custom_ui/js/theme_engine.js",
+    "/assets/custom_ui/js/login.js"
+]
+
+web_include_css = [
+    "/assets/custom_ui/css/theme.css"
+]
+
+web_include_js = [
+    "/assets/custom_ui/js/theme_engine.js",
+    "/assets/custom_ui/js/login.js"
+]
+
 # Includes in <head>
 # ------------------
 
