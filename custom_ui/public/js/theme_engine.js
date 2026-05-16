@@ -70,6 +70,9 @@
             freeze: false,
             callback: function (response) {
                 applyTheme(response.message);
+                if (window.custom_ui_apply_chart_theme) {
+                    window.custom_ui_apply_chart_theme();
+                }
             },
         });
     }

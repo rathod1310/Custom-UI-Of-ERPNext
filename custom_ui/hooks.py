@@ -12,8 +12,13 @@ app_include_css = [
 
 app_include_js = [
     "/assets/custom_ui/js/theme_engine.js",
+    "/assets/custom_ui/js/custom_theme.js",
 ]
 
 web_include_css = [
     "/assets/custom_ui/css/custom_theme.css",
+]
+
+web_include_js = [
+    "/assets/custom_ui/js/custom_theme.js",
 ]
