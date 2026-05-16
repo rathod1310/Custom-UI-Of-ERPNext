@@ -5,200 +5,135 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "theme_name",
-  "app_logo",
-  "login_logo",
+  "enabled",
+  "apply_for",
+  "theme_mode",
+  "palette",
   "primary_color",
   "secondary_color",
-  "navbar_color",
-  "sidebar_color",
   "background_color",
-  "text_color",
+  "sidebar_color",
+  "navbar_color",
   "card_color",
-  "button_color",
-  "gradient_start",
-  "gradient_end",
-  "background_image",
-  "font_family",
-  "sidebar_width",
-  "border_radius",
-  "font_size",
-  "shadow_strength",
-  "theme_mode",
-  "glass_effect",
-  "neon_effect",
-  "enable_animation",
-  "rounded_ui",
-  "workspace_style",
-  "table_style",
-  "login_theme"
+  "text_color",
+  "muted_text_color",
+  "border_color",
+  "hover_color",
+  "button_text_color"
  ],
  "fields": [
   {
-   "fieldname": "theme_name",
-   "fieldtype": "Data",
-   "label": "Theme Name"
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
   },
   {
-   "fieldname": "app_logo",
-   "fieldtype": "Attach Image",
-   "label": "App Logo"
-  },
-  {
-   "fieldname": "login_logo",
-   "fieldtype": "Attach Image",
-   "label": "Login Logo"
-  },
-  {
-   "default": "#00f5ff",
-   "fieldname": "primary_color",
-   "fieldtype": "Color",
-   "label": "Primary Color"
-  },
-  {
-   "default": "#8b5cf6",
-   "fieldname": "secondary_color",
-   "fieldtype": "Color",
-   "label": "Secondary Color"
-  },
-  {
-   "default": "#0f172a",
-   "fieldname": "navbar_color",
-   "fieldtype": "Color",
-   "label": "Navbar Color"
-  },
-  {
-   "default": "#111827",
-   "fieldname": "sidebar_color",
-   "fieldtype": "Color",
-   "label": "Sidebar Color"
-  },
-  {
-   "default": "#050816",
-   "fieldname": "background_color",
-   "fieldtype": "Color",
-   "label": "Background Color"
-  },
-  {
-   "default": "#ffffff",
-   "fieldname": "text_color",
-   "fieldtype": "Color",
-   "label": "Text Color"
-  },
-  {
-   "default": "#1e293b",
-   "fieldname": "card_color",
-   "fieldtype": "Color",
-   "label": "Card Color"
-  },
-  {
-   "default": "#00f5ff",
-   "fieldname": "button_color",
-   "fieldtype": "Color",
-   "label": "Button Color"
-  },
-  {
-   "default": "#00f5ff",
-   "fieldname": "gradient_start",
-   "fieldtype": "Color",
-   "label": "Gradient Start"
-  },
-  {
-   "default": "#ff00ff",
-   "fieldname": "gradient_end",
-   "fieldtype": "Color",
-   "label": "Gradient End"
-  },
-  {
-   "fieldname": "background_image",
-   "fieldtype": "Attach Image",
-   "label": "Background Image"
-  },
-  {
-   "fieldname": "font_family",
+   "default": "Global",
+   "fieldname": "apply_for",
    "fieldtype": "Select",
-   "label": "Font Family",
-   "options": "Inter\nPoppins\nRoboto\nMontserrat\nOrbitron"
+   "label": "Apply For",
+   "options": "Global\nCurrent User",
+   "reqd": 1
   },
   {
-   "default": "240",
-   "fieldname": "sidebar_width",
-   "fieldtype": "Data",
-   "label": "Sidebar Width"
-  },
-  {
-   "default": "16",
-   "fieldname": "border_radius",
-   "fieldtype": "Data",
-   "label": "Border Radius"
-  },
-  {
-   "default": "14",
-   "fieldname": "font_size",
-   "fieldtype": "Data",
-   "label": "Font Size"
-  },
-  {
-   "fieldname": "shadow_strength",
-   "fieldtype": "Select",
-   "label": "Shadow Strength",
-   "options": "Low\nMedium\nHigh"
-  },
-  {
-   "default": "Dark",
+   "default": "Palette",
    "fieldname": "theme_mode",
    "fieldtype": "Select",
    "label": "Theme Mode",
-   "options": "Light\nDark"
+   "options": "Palette\nCustom",
+   "reqd": 1
   },
   {
-   "default": "1",
-   "fieldname": "glass_effect",
-   "fieldtype": "Check",
-   "label": "Enable Glass Effect"
-  },
-  {
-   "default": "1",
-   "fieldname": "neon_effect",
-   "fieldtype": "Check",
-   "label": "Enable Neon Effect"
-  },
-  {
-   "default": "1",
-   "fieldname": "enable_animation",
-   "fieldtype": "Check",
-   "label": "Enable Animation"
-  },
-  {
-   "default": "1",
-   "fieldname": "rounded_ui",
-   "fieldtype": "Check",
-   "label": "Enable Rounded UI"
-  },
-  {
-   "fieldname": "workspace_style",
+   "default": "Soft Blue Professional",
+   "fieldname": "palette",
    "fieldtype": "Select",
-   "label": "Workspace Style",
-   "options": "Classic\nModern\nGlass\nNeon"
+   "label": "Palette",
+   "options": "Soft Blue Professional\nEmerald Corporate\nWarm Beige Minimal\nLavender Soft\nSlate Clean"
   },
   {
-   "fieldname": "table_style",
-   "fieldtype": "Select",
-   "label": "Table Style",
-   "options": "Default\nStriped\nGlass\nCompact"
+   "default": "#2563EB",
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "Primary Color",
+   "reqd": 1
   },
   {
-   "fieldname": "login_theme",
-   "fieldtype": "Select",
-   "label": "Login Theme",
-   "options": "Default\nNeon\nGlass\nGradient"
+   "default": "#DBEAFE",
+   "fieldname": "secondary_color",
+   "fieldtype": "Color",
+   "label": "Secondary Color",
+   "reqd": 1
+  },
+  {
+   "default": "#F8FAFC",
+   "fieldname": "background_color",
+   "fieldtype": "Color",
+   "label": "Background Color",
+   "reqd": 1
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "sidebar_color",
+   "fieldtype": "Color",
+   "label": "Sidebar Color",
+   "reqd": 1
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "navbar_color",
+   "fieldtype": "Color",
+   "label": "Navbar Color",
+   "reqd": 1
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "card_color",
+   "fieldtype": "Color",
+   "label": "Card Color",
+   "reqd": 1
+  },
+  {
+   "default": "#1E293B",
+   "fieldname": "text_color",
+   "fieldtype": "Color",
+   "label": "Text Color",
+   "reqd": 1
+  },
+  {
+   "default": "#64748B",
+   "fieldname": "muted_text_color",
+   "fieldtype": "Color",
+   "label": "Muted Text Color",
+   "reqd": 1
+  },
+  {
+   "default": "#E2E8F0",
+   "fieldname": "border_color",
+   "fieldtype": "Color",
+   "label": "Border Color",
+   "reqd": 1
+  },
+  {
+   "default": "#EFF6FF",
+   "fieldname": "hover_color",
+   "fieldtype": "Color",
+   "label": "Hover Color",
+   "reqd": 1
+  },
+  {
+   "default": "#FFFFFF",
+   "fieldname": "button_text_color",
+   "fieldtype": "Color",
+   "label": "Button Text Color",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-05-08 15:35:23.092477",
+ "modified": "2026-05-16 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "Custom UI",
  "name": "Custom Theme Settings",
@@ -208,6 +143,7 @@
    "create": 1,
    "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
    "role": "System Manager",

@@ -1,327 +1,181 @@
-/* =========================================================
-   SOFT BEIGE MODE
-   ========================================================= */
-
-body.dark-mode {
-
-    --theme-bg: #F9F8F6;
-
-    --theme-navbar: #EFE9E3;
-
-    --theme-sidebar: #F9F8F6;
-
-    --theme-card: #FFFFFF;
-
-    --theme-table: #FFFFFF;
-
-    --theme-table-header: #EFE9E3;
-
-    --theme-text: #2F2924;
-
-    --theme-muted: #7A6F66;
-
-    --theme-border: #D9CFC7;
-
-    --theme-hover: #F3EEE9;
-
-    --theme-primary: #C9B59C;
-
-    --theme-secondary: #D9CFC7;
+html[data-custom-ui-theme="1"] {
+    --custom-ui-primary-color: #2563EB;
+    --custom-ui-secondary-color: #DBEAFE;
+    --custom-ui-background-color: #F8FAFC;
+    --custom-ui-sidebar-color: #FFFFFF;
+    --custom-ui-navbar-color: #FFFFFF;
+    --custom-ui-card-color: #FFFFFF;
+    --custom-ui-text-color: #1E293B;
+    --custom-ui-muted-text-color: #64748B;
+    --custom-ui-border-color: #E2E8F0;
+    --custom-ui-hover-color: #EFF6FF;
+    --custom-ui-button-text-color: #FFFFFF;
 }
 
-/* =========================================================
-   BACKGROUND
-   ========================================================= */
-
-html body.dark-mode,
-body.dark-mode,
-body.dark-mode #body,
-body.dark-mode .main-section,
-body.dark-mode .frappe-app,
-body.dark-mode .app-wrapper,
-body.dark-mode .layout-main,
-body.dark-mode .layout-main-section,
-body.dark-mode .layout-main-section-wrapper,
-body.dark-mode .page-container,
-body.dark-mode .page-body,
-body.dark-mode .page-content,
-body.dark-mode .desk-container,
-body.dark-mode .desk-sidebar,
-body.dark-mode .desk-page {
-
-    background: var(--theme-bg) !important;
-
-    color: var(--theme-text) !important;
+html[data-custom-ui-theme="1"] body,
+html[data-custom-ui-theme="1"] .page-container,
+html[data-custom-ui-theme="1"] .page-body,
+html[data-custom-ui-theme="1"] .layout-main,
+html[data-custom-ui-theme="1"] .layout-main-section-wrapper {
+    background: var(--custom-ui-background-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   NAVBAR
-   ========================================================= */
-
-body.dark-mode .navbar,
-body.dark-mode .navbar-main {
-
-    background: var(--theme-navbar) !important;
-
-    border-bottom: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .navbar,
+html[data-custom-ui-theme="1"] .navbar-main {
+    background: var(--custom-ui-navbar-color) !important;
+    border-bottom: 1px solid var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   SIDEBAR
-   ========================================================= */
-
-body.dark-mode .layout-side-section,
-body.dark-mode .desk-sidebar,
-body.dark-mode .sidebar-column {
-
-    background: var(--theme-sidebar) !important;
-
-    border-right: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .desk-sidebar,
+html[data-custom-ui-theme="1"] .layout-side-section,
+html[data-custom-ui-theme="1"] .sidebar-column {
+    background: var(--custom-ui-sidebar-color) !important;
+    border-right: 1px solid var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   SIDEBAR ITEMS
-   ========================================================= */
-
-body.dark-mode .standard-sidebar-item,
-body.dark-mode .sidebar-item {
-
-    color: var(--theme-muted) !important;
+html[data-custom-ui-theme="1"] .layout-main-section,
+html[data-custom-ui-theme="1"] .page-content,
+html[data-custom-ui-theme="1"] .form-layout,
+html[data-custom-ui-theme="1"] .form-page {
+    background: var(--custom-ui-background-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-body.dark-mode .standard-sidebar-item:hover,
-body.dark-mode .standard-sidebar-item.selected,
-body.dark-mode .sidebar-item:hover {
-
-    background: var(--theme-hover) !important;
-
-    color: var(--theme-text) !important;
+html[data-custom-ui-theme="1"] .page-head {
+    background: var(--custom-ui-background-color) !important;
+    border-bottom: 1px solid var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   PAGE HEAD
-   ========================================================= */
-
-body.dark-mode .page-head {
-
-    background: var(--theme-bg) !important;
-
-    border-bottom: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .frappe-card,
+html[data-custom-ui-theme="1"] .card,
+html[data-custom-ui-theme="1"] .widget,
+html[data-custom-ui-theme="1"] .form-section,
+html[data-custom-ui-theme="1"] .dashboard-section,
+html[data-custom-ui-theme="1"] .section-body,
+html[data-custom-ui-theme="1"] .workspace-card,
+html[data-custom-ui-theme="1"] .desk-shortcut-widget-box {
+    background: var(--custom-ui-card-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   CARDS
-   ========================================================= */
-
-body.dark-mode .card,
-body.dark-mode .widget,
-body.dark-mode .frappe-card,
-body.dark-mode .form-section,
-body.dark-mode .dashboard-section,
-body.dark-mode .section-body,
-body.dark-mode .workspace-card,
-body.dark-mode .desk-shortcut-widget-box {
-
-    background: var(--theme-card) !important;
-
-    color: var(--theme-text) !important;
-
-    border: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .btn-primary,
+html[data-custom-ui-theme="1"] button.btn-primary {
+    background: var(--custom-ui-primary-color) !important;
+    border-color: var(--custom-ui-primary-color) !important;
+    color: var(--custom-ui-button-text-color) !important;
 }
 
-/* =========================================================
-   TABLES
-   ========================================================= */
-
-body.dark-mode .datatable,
-body.dark-mode .dt-scrollable,
-body.dark-mode .grid-body,
-body.dark-mode .list-row-container,
-body.dark-mode .result-list {
-
-    background: var(--theme-table) !important;
-
-    border: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .btn-primary:hover,
+html[data-custom-ui-theme="1"] button.btn-primary:hover,
+html[data-custom-ui-theme="1"] .btn-primary:focus,
+html[data-custom-ui-theme="1"] button.btn-primary:focus {
+    background: var(--custom-ui-primary-color) !important;
+    border-color: var(--custom-ui-primary-color) !important;
+    color: var(--custom-ui-button-text-color) !important;
+    filter: brightness(0.96);
 }
 
-/* TABLE HEADER */
-
-body.dark-mode .dt-header,
-body.dark-mode .grid-heading-row,
-body.dark-mode .list-row-head {
-
-    background: var(--theme-table-header) !important;
-
-    color: var(--theme-text) !important;
-
-    border-bottom: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .btn-default,
+html[data-custom-ui-theme="1"] button.btn-default {
+    background: var(--custom-ui-card-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* TABLE ROW */
-
-body.dark-mode .list-row,
-body.dark-mode .dt-cell,
-body.dark-mode .grid-row {
-
-    background: var(--theme-table) !important;
-
-    color: var(--theme-text) !important;
-
-    border-color: var(--theme-border) !important;
+html[data-custom-ui-theme="1"] .btn-default:hover,
+html[data-custom-ui-theme="1"] button.btn-default:hover {
+    background: var(--custom-ui-hover-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* TABLE HOVER */
-
-body.dark-mode .list-row:hover,
-body.dark-mode .dt-row:hover .dt-cell,
-body.dark-mode .grid-row:hover {
-
-    background: var(--theme-hover) !important;
+html[data-custom-ui-theme="1"] input,
+html[data-custom-ui-theme="1"] select,
+html[data-custom-ui-theme="1"] textarea,
+html[data-custom-ui-theme="1"] .form-control,
+html[data-custom-ui-theme="1"] .control-input,
+html[data-custom-ui-theme="1"] .control-input input,
+html[data-custom-ui-theme="1"] .control-input select,
+html[data-custom-ui-theme="1"] .control-input textarea {
+    background: var(--custom-ui-card-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   FORMS
-   ========================================================= */
-
-body.dark-mode .form-control,
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode select {
-
-    background: #FFFFFF !important;
-
-    color: var(--theme-text) !important;
-
-    border: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] input:focus,
+html[data-custom-ui-theme="1"] select:focus,
+html[data-custom-ui-theme="1"] textarea:focus,
+html[data-custom-ui-theme="1"] .form-control:focus {
+    border-color: var(--custom-ui-primary-color) !important;
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--custom-ui-primary-color) 18%, transparent) !important;
 }
 
-body.dark-mode .form-control:focus,
-body.dark-mode input:focus,
-body.dark-mode textarea:focus,
-body.dark-mode select:focus {
-
-    border-color: var(--theme-primary) !important;
+html[data-custom-ui-theme="1"] .datatable,
+html[data-custom-ui-theme="1"] .dt-scrollable,
+html[data-custom-ui-theme="1"] .grid-body,
+html[data-custom-ui-theme="1"] .result-list {
+    background: var(--custom-ui-card-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-body.dark-mode .btn-primary,
-body.dark-mode button.btn-primary {
-
-    background:
-        linear-gradient(
-            135deg,
-            #C9B59C,
-            #D9CFC7
-        ) !important;
-
-    color: #2F2924 !important;
-
-    border: none !important;
+html[data-custom-ui-theme="1"] .dt-header,
+html[data-custom-ui-theme="1"] .grid-heading-row,
+html[data-custom-ui-theme="1"] .list-row-head {
+    background: var(--custom-ui-secondary-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   LINKS
-   ========================================================= */
-
-body.dark-mode a {
-
-    color: #8A6F52 !important;
+html[data-custom-ui-theme="1"] .list-row,
+html[data-custom-ui-theme="1"] .dt-row,
+html[data-custom-ui-theme="1"] .dt-cell,
+html[data-custom-ui-theme="1"] .grid-row {
+    background: var(--custom-ui-card-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   TEXT
-   ========================================================= */
-
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6,
-body.dark-mode .page-title,
-body.dark-mode .title-text,
-body.dark-mode .widget-title,
-body.dark-mode .control-label,
-body.dark-mode label {
-
-    color: var(--theme-text) !important;
+html[data-custom-ui-theme="1"] .list-row:hover,
+html[data-custom-ui-theme="1"] .dt-row:hover,
+html[data-custom-ui-theme="1"] .dt-row:hover .dt-cell,
+html[data-custom-ui-theme="1"] .grid-row:hover,
+html[data-custom-ui-theme="1"] .standard-sidebar-item:hover,
+html[data-custom-ui-theme="1"] .standard-sidebar-item.selected,
+html[data-custom-ui-theme="1"] .sidebar-item:hover {
+    background: var(--custom-ui-hover-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   MODAL / DROPDOWN
-   ========================================================= */
-
-body.dark-mode .modal-content,
-body.dark-mode .dropdown-menu,
-body.dark-mode .awesomplete ul {
-
-    background: var(--theme-card) !important;
-
-    color: var(--theme-text) !important;
-
-    border: 1px solid var(--theme-border) !important;
+html[data-custom-ui-theme="1"] a,
+html[data-custom-ui-theme="1"] .text-primary,
+html[data-custom-ui-theme="1"] .indicator-pill.blue,
+html[data-custom-ui-theme="1"] .indicator.blue::before {
+    color: var(--custom-ui-primary-color) !important;
 }
 
-/* =========================================================
-   RADIO / CHECKBOX
-   ========================================================= */
-
-body.dark-mode input[type="radio"],
-body.dark-mode input[type="checkbox"] {
-
-    accent-color: #C9B59C !important;
+html[data-custom-ui-theme="1"] .text-muted,
+html[data-custom-ui-theme="1"] .text-secondary,
+html[data-custom-ui-theme="1"] .control-label,
+html[data-custom-ui-theme="1"] .help-box,
+html[data-custom-ui-theme="1"] .comment-text {
+    color: var(--custom-ui-muted-text-color) !important;
 }
 
-body.dark-mode .control-input input:checked,
-body.dark-mode .form-check input:checked,
-body.dark-mode input[type="radio"]:checked,
-body.dark-mode input[type="checkbox"]:checked {
-
-    background-color: #C9B59C !important;
-
-    border-color: #8A6F52 !important;
+html[data-custom-ui-theme="1"] .modal-content,
+html[data-custom-ui-theme="1"] .dropdown-menu,
+html[data-custom-ui-theme="1"] .awesomplete ul {
+    background: var(--custom-ui-card-color) !important;
+    border-color: var(--custom-ui-border-color) !important;
+    color: var(--custom-ui-text-color) !important;
 }
 
-/* =========================================================
-   THEME SWITCH BUTTON
-   ========================================================= */
-
-#theme-switcher {
-
-    position: fixed !important;
-
-    bottom: 20px !important;
-
-    right: 20px !important;
-
-    width: 52px !important;
-
-    height: 52px !important;
-
-    border: none !important;
-
-    border-radius: 50% !important;
-
-    background:
-        linear-gradient(
-            135deg,
-            #C9B59C,
-            #D9CFC7
-        ) !important;
-
-    color: #2F2924 !important;
-
-    font-size: 22px !important;
-
-    cursor: pointer !important;
-
-    z-index: 2147483647 !important;
-}
-
-#theme-switcher:hover {
-
-    opacity: 0.9;
+html[data-custom-ui-theme="1"] input[type="checkbox"],
+html[data-custom-ui-theme="1"] input[type="radio"] {
+    accent-color: var(--custom-ui-primary-color) !important;
 }
